@@ -8,6 +8,14 @@ Add `%% fold %%` markers to "crease" your markdown. Then run **Fold along crease
 
 ## ⚙️ Commands
 
+### Nested List Folding
+
+This fork of Creases adds support for folding nested lists in addition to
+headings.  Commands added:
+
+- **Set Fold Level to N** – Fold all nested lists in the correct document that
+  match a given level (0-9)
+
 ### General Folding
 
 - **Fold headings by level** – Fold all headings in the correct document that match a given level (H1 - H6)
