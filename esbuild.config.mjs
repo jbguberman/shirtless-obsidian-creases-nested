@@ -3,7 +3,10 @@ import esbuild from "esbuild";
 import process from "process";
 import builtins from "builtin-modules";
 
-import manifest from "./manifest.json" assert { type: "json" };
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+const manifest = require("./manifest.json");
 
 config();
 

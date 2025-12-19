@@ -1,6 +1,6 @@
 {
-  "id": "creases",
-  "name": "Creases",
+  "id": "creases-nl",
+  "name": "Creases NL",
   "description": "Tools for efficiently folding markdown sections in Obsidian",
   "version": "0.7.0",
   "author": "Liam Cain",

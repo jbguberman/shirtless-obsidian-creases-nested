@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-creases",
+  "name": "obsidian-creases-nl",
   "version": "0.7.0",
   "description": "Configurable folding within Obsidian",
   "author": "liamcain",
@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint . --ext .ts",
     "dev": "node --experimental-json-modules esbuild.config.mjs",
-    "build": "yarn run lint && node --experimental-json-modules esbuild.config.mjs production",
+    "build": "npm run lint && node --experimental-json-modules esbuild.config.mjs production",
     "build:ci": "node --experimental-json-modules esbuild.config.mjs production",
     "release": "standard-version"
   },

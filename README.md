@@ -1,4 +1,4 @@
-# Creases 👕
+# Creases Nested Lists 👕
 
 Tools for efficiently folding markdown sections in Obsidian.
 
@@ -13,6 +13,7 @@ Add `%% fold %%` markers to "crease" your markdown. Then run **Fold along crease
 - **Fold headings by level** – Fold all headings in the correct document that match a given level (H1 - H6)
 - **Fold More** - Finds and folds the closest heading or list item.
 - **Fold less** - Finds and unfolds the closest heading or list item.
+- **Set list fold level 0-9** - Sets the visible nesting depth for indented lists (0 fully collapses; higher levels progressively reveal more depth).
 
 ### Fold Levels
 
