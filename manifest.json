@@ -1,8 +1,8 @@
 {
-  "id": "creases-nl",
-  "name": "Creases NL",
+  "id": "shirtless-obsidian-creases-nested",
+  "name": "Shirtless Obsidian Creases Nested",
   "description": "Tools for efficiently folding markdown sections in Obsidian",
-  "version": "0.7.0 - Shirtless Edition",
+  "version": "0.7.0",
   "author": "Josh Guberman",
   "authorUrl": "https://github.com/jbguberman/",
   "isDesktopOnly": false,

@@ -5,3 +5,5 @@ main.js
 .vscode/
 *.code-workspace
 .DS_Store
+.devcontainer/
+styles.css

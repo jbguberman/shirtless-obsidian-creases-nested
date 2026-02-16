@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-creases-nl",
+  "name": "shirtless-obsidian-creases-nested",
   "version": "0.7.0",
   "description": "Configurable folding within Obsidian",
   "author": "liamcain",
@@ -16,7 +16,7 @@
     "t": ""
   },
   "peerDependencies": {
-    "@codemirror/language": "0.19.x",
+    "@codemirror/language": "^6.12.1",
     "@codemirror/rangeset": "0.19.x",
     "@codemirror/view": "0.19.x"
   },
@@ -27,7 +27,7 @@
     "@codemirror/basic-setup": "^0.20.0",
     "@codemirror/buildhelper": "^1.0.0",
     "@codemirror/lang-css": "^6.2.0",
-    "@codemirror/language": "^6.8.0",
+    "@codemirror/language": "^6.12.1",
     "@codemirror/rangeset": "^0.19.9",
     "@codemirror/view": "^6.15.0",
     "@types/lodash": "4.14.179",

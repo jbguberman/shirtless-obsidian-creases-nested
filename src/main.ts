@@ -145,7 +145,7 @@ export default class CreasesPlugin extends Plugin {
 
   private async handleNewFile(file: TFile, contents: string): Promise<void> {
     if (
-      ["start-folded", "fold-and-clear"].contains(
+      ["start-folded", "fold-and-clear"].includes(
         this.settings.templateCreasesBehavior
       ) &&
       hasCrease(contents)
@@ -172,7 +172,7 @@ export default class CreasesPlugin extends Plugin {
 
   async onTemplateAppend(evt: TemplaterAppendedEvent): Promise<void> {
     if (
-      ["start-folded", "fold-and-clear"].contains(this.settings.templateCreasesBehavior)
+      ["start-folded", "fold-and-clear"].includes(this.settings.templateCreasesBehavior)
     ) {
       const { view, newSelections, oldSelections } = evt;
       const foldPositions: FoldPosition[] = [];
@@ -435,14 +435,19 @@ export default class CreasesPlugin extends Plugin {
       return;
     }
 
-    menu.addItem((item) =>
+    menu.addItem((item) => {
       item
         .setTitle("Toggle crease")
         .setIcon("chevron-down")
         .onClick(() => {
           this.toggleCrease(editor, view);
-        })
-    );
+        });
+
+      const iconEl = (item as unknown as { iconEl?: HTMLElement }).iconEl;
+      if (iconEl) {
+        iconEl.style.verticalAlign = "middle";
+      }
+    });
   }
 
   toggleCrease(editor: Editor, _view: MarkdownView): void {
@@ -555,7 +560,7 @@ export default class CreasesPlugin extends Plugin {
 
   private async getCreasesFromFile(file: TFile): Promise<FoldPosition[]> {
     const fileContents = await this.app.vault.cachedRead(file);
-    const fileLines = fileContents.split("\n");
+    const fileLines = fileContents.split(/\r?\n/);
     const foldPositions: FoldPosition[] = [];
     for (let lineNum = 0; lineNum <= fileLines.length; lineNum++) {
       const line = fileLines[lineNum];

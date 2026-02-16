@@ -25,7 +25,11 @@ class CreaseWidget extends WidgetType {
 
   toDOM() {
     const creaseEl = createSpan("cm-creases-icon");
-    setIcon(creaseEl, "shirt");
+    setIcon(creaseEl, "chevron-down");
+    creaseEl.style.verticalAlign = "middle";
+    creaseEl.style.lineHeight = "1";
+    creaseEl.style.display = "inline-flex";
+    creaseEl.style.alignItems = "center";
     creaseEl.addEventListener("click", (evt) => {
       const menu = new Menu();
       menu
