@@ -438,7 +438,7 @@ export default class CreasesPlugin extends Plugin {
     menu.addItem((item) =>
       item
         .setTitle("Toggle crease")
-        .setIcon("shirt")
+        .setIcon("chevron-down")
         .onClick(() => {
           this.toggleCrease(editor, view);
         })
