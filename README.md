@@ -1,3 +1,5 @@
+Fork of [www-ssl/obsidian-creases-nested-lists](https://github.com/wr-ssl/obsidian-creases-nested-lists). Replaces the t-shirt icon with a chevron. 
+
 # Creases Nested Lists 👕
 
 Tools for efficiently folding markdown sections in Obsidian.
@@ -67,7 +69,9 @@ Folding all the headings at a given depth can be a tedious process. Well, no lon
 
 1. Just run "Toggle fold for H3."
 
-## 🎞 Credits
+---
+
+## 🎞 Credits (from original repo):
 
 Special thanks **@mleo2003** on Discord for the plugin name.
 
